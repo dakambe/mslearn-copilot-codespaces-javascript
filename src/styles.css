@@ -123,3 +123,18 @@ img.socialIcon {
   height: 30px;
   width: 30px;
 }
+
+/* Social icon animation */
+.social-icon {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), color 0.3s;
+  display: inline-block;
+  font-size: 2rem;
+  margin: 0 0.5rem;
+  color: #4e567e; /* fallback color */
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  transform: scale(1.2) rotate(-8deg);
+  color: #d2f1e4;
+}
